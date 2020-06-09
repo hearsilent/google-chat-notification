@@ -3,8 +3,7 @@ on:
   pull_request:
   push:
     branches:
-    - master
-    - 'releases/*'
+    - feature/release_event
 jobs:
   build:
     runs-on: ubuntu-latest
