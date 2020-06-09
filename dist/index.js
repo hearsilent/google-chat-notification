@@ -5486,12 +5486,15 @@ function notify(name, url, status) {
                                     keyValue: {
                                         topLabel: "version",
                                         content: tag,
-                                        contentMultiline: true,
                                         button: textButton("VIEW RELEASE", releaseUrl)
                                     }
                                 },
                                 {
-                                    keyValue: { topLabel: "desc", content: desc }
+                                    keyValue: {
+                                        topLabel: "desc",
+                                        content: desc,
+                                        contentMultiline: true
+                                    }
                                 }
                             ]
                         },

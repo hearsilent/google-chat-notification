@@ -71,14 +71,17 @@ export async function notify(name: string, url: string, status: Status) {
             },
             {
               keyValue: { 
-                topLabel: "version", 
+                topLabel: "version",
                 content: tag,
-                contentMultiline: true,
                 button: textButton("VIEW RELEASE", releaseUrl)
               }
             },
             {
-              keyValue: { topLabel: "desc", content: desc }
+              keyValue: { 
+                topLabel: "desc",
+                content: desc,
+                contentMultiline: true
+              }
             }
           ]
         },
